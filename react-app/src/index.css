@@ -1,0 +1,137 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #b7abab; /* Replace with your desired background color */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* Added background image styles */
+  background-image: url("../public/images/background.jpg"); /* Replace with your image path */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Different styles for "Get" and "Set" buttons */
+button.get {
+  border-radius: 8px;
+  border: 1px solid #646cff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #e0e0e0;
+  color: #646cff;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+button.get:hover {
+  background-color: #d0d0d0;
+  border-color: #4e4e4e;
+}
+button.get-all {
+  border-radius: 8px;
+  border: 1px solid #646cff;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #e0e0e0;
+  color: #646cff;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+button.get-all:hover {
+  background-color: #d0d0d0;
+  border-color: #4e4e4e;
+}
+
+button.set {
+  border-radius: 8px;
+  border: 1px solid #1a1a1a;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #646cff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.25s, border-color 0.25s;
+}
+
+button.set:hover {
+  background-color: #535bf2;
+  border-color: #000;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button.get {
+    background-color: #f9f9f9;
+    color: #646cff;
+  }
+  button.get:hover {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+  }
+  button.get-all {
+    background-color: #f9f9f9;
+    color: #646cff;
+  }
+  button.get-all:hover {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+  }
+  button.set {
+    background-color: #535bf2;
+    color: #fff;
+  }
+  button.set:hover {
+    background-color: #434bff;
+    border-color: #333;
+  }
+}
+
